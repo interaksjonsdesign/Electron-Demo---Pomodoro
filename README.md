@@ -11,7 +11,7 @@ git clone https://github.com/interaksjonsdesign/Electron-Pomodoro-Demo.git
 cd Electron-Pomodoro-Demo
 ```
 
-**2\.** Install all modules and start the project
+**2\.** Install the node packages (electron)
 ```bash
 npm install
 ```
