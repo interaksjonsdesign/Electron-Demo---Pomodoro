@@ -7,8 +7,8 @@ Electron demo based on the Pomodoro timer website we created in class earlier th
 **1\.** Fork or clone the repository and its submodules
 
 ```bash
-git clone https://github.com/interaksjonsdesign/Electron-Pomodoro-Demo.git
-cd Electron-Pomodoro-Demo
+git clone https://github.com/interaksjonsdesign/electron-pomodoro-demo.git
+cd electron-pomodoro-demo
 ```
 
 **2\.** Install the node packages (electron)
