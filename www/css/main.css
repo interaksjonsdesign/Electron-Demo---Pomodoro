@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.no-select {
+    user-select: none;
+    cursor: default;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 300;
+    background-color: #f03e3e;
+    color: white;
+}
+
+body.running {
+    animation-name: bg-glow;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bg-glow {
+    0% {
+        background-color: #f03e3e;
+    }
+    50% {
+        background-color: #d42d2d;
+    }
+    100% {
+        background-color: #f03e3e;
+    }
+}
+
+.wrapper {
+    min-width: 350px;
+    max-width: 500px;
+    min-height: 300px;
+    height: 90vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 50px;
+    font-style: italic; 
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #9b1f1f;
+}
+
+.duration {
+    text-align: center;
+    width: 100%;
+}
+
+.duration .time {
+    font-size: 8em;
+    font-weight: 100;
+    letter-spacing: -0.05em;
+}
+
+.start-button {
+    flex: none;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 30px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    transition: all .15s ease;
+}
+
+.start-button:hover {
+    border: 1px solid #9b1f1f;
+    color: #9b1f1f;
+}
+
+.counter {
+    color: #9b1f1f;
+}
+

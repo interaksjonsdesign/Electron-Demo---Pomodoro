@@ -1,0 +1,14 @@
+{
+    "name": "Pomodoro",
+    "version": "0.1.0",
+    "description": "A JavaScript pomodoro app",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "Olivier Klaver",
+    "license": "MIT",
+    "dependencies": {
+        "electron": "^1.6.6"
+    }
+}
