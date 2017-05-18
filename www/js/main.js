@@ -1,5 +1,5 @@
-var {ipcRenderer} = require('electron');
-
+var electron = require('electron');
+var ipcRenderer = electron.ipcRenderer;
 
 
 /*

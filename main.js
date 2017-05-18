@@ -1,8 +1,15 @@
-var {app, Tray, ipcMain, BrowserWindow} = require('electron');
+var electron = require('electron');
+var app = electron.app;
+var Tray = electron.Tray;
+var ipcMain = electron.ipcMain;
+var BrowserWindow = electron.BrowserWindow;
+
 var path = require('path');
 var url = require('url');
 
 
+
+// Global vars
 var win;
 var tray = null;
 
@@ -23,7 +30,7 @@ function createWindow() {
         pathname: path.join(__dirname, 'www/index.html'),
         protocol: 'file:',
         slashes: true
-    }))
+    }));
 
     // open dev tools
     //win.webContents.openDevTools();
@@ -38,12 +45,12 @@ app.on('ready', createWindow);
 app.on('window-all-closed', function () {
 
     app.quit();
-})
+});
 
 // Receive messages from the web-page
-ipcMain.on('update-duration', (event, arg) => {
+ipcMain.on('update-duration', function(event, arg){
 
     tray.setTitle(arg);
-})
+});
 
 
