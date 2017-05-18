@@ -6,8 +6,8 @@
     "license": "MIT",
     "main": "main.js",
     "scripts": {
-        "test": "electron .",
-        "start": "electron-packager . --icon \"app_icons/pomo-icon.icns\" --overwrite"
+        "electron": "electron .",
+        "package": "electron-packager . --icon \"app_icons/pomo-icon.icns\" --overwrite"
     },
     "repository": {
         "type": "git",
