@@ -18,10 +18,10 @@ npm install
 
 **3\.** Run the project
 ```bash
-npm run electron
+electron .
 ```
 
 **4\.** Package the app (MacOS)
 ```bash
-npm run package
+electron-packager . --icon "app_icons/pomo-icon.icns" --overwrite
 ```
