@@ -1,3 +1,7 @@
+var {ipcRenderer} = require('electron');
+
+
+
 /*
     Pomodoro
     
@@ -95,6 +99,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
         minTextObj.textContent = min + ":" + sec;
         documentTitle.textContent = min + ":" + sec + " | " + origTitleMsg;
+        
+        ipcRenderer.send('update-duration', min + ":" + sec);
     }
 
     // timer is done
@@ -106,6 +112,8 @@ window.addEventListener('DOMContentLoaded', function () {
         pomodoroCount.textContent = pomoCounter;
         minTextObj.textContent = "done!";
         documentTitle.textContent = "done! | " + origTitleMsg;
+        
+        ipcRenderer.send('update-duration', 'done!');
         
         setTimeout(resetClock, 10 * 1000);
     }
@@ -126,5 +134,7 @@ window.addEventListener('DOMContentLoaded', function () {
         
         documentTitle.textContent = origTitleMsg;
         minTextObj.textContent = duration.min;
+        
+        ipcRenderer.send('update-duration', "");
     }
 });
