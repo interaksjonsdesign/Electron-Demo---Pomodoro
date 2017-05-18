@@ -18,5 +18,10 @@ npm install
 
 **3\.** Run the project
 ```bash
-electron .
+npm run electron
+```
+
+**4\.** Package the app (MacOS)
+```bash
+npm run package
 ```
